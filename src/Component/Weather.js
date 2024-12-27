@@ -9,7 +9,7 @@ setCity(e.target.value)
     }
     const fetch=async()=>{
       try {
-        const response= await axios.get(`http://api.weatherapi.com/v1/current.json?key=e7123cd161214b23bdf165014242612&q=${city}&aqi=yes`)
+        const response= await axios.get(`https://api.weatherapi.com/v1/current.json?key=e7123cd161214b23bdf165014242612&q=${city}&aqi=yes`)
         setData(response)
         console.log(dataset);
       } catch (error) {
